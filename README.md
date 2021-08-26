@@ -71,8 +71,8 @@ eureka:
   client:
     register-with-eureka: true
     fetch-registry: true
-    service-url:
-      defaultZone: http://127.0.0.1:8761/eureka # 서버의 위치, 해당 서버에 유레카 클라이언트 등록
+#   service-url:
+#     defaultZone: http://127.0.0.1:8761/eureka # 서버의 위치, 해당 서버에 유레카 클라이언트 등록
 ```
 
 - 서버 포트 다르게해서 실행하는 방법 3가지
@@ -109,7 +109,7 @@ eureka:
 - Spring Cloud에서의 MSA간 통신
   1. RestTemplate
   2. Feign Client
-- 기존 loadBalancing인 Ribbon 이용
+- 기존 loadBalancing은 Ribbon 이용
   - **Client Side** Load Balancer
   - 서비스 호출 시: `ip:port`로 호출 x -> 서비스 이름으로 호출
   - Health Check
