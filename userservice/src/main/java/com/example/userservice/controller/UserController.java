@@ -11,7 +11,7 @@ public class UserController {
 
     private final Environment env;
 
-    @RequestMapping("/health_check")
+    @RequestMapping("/user-service/health-check")
     public String healthCheck() {
         return String.format("USER-SERVICE running on Port %s", env.getProperty("local.server.port"));
     }
