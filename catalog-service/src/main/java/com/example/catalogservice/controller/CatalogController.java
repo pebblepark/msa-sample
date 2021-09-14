@@ -25,7 +25,7 @@ public class CatalogController {
 
     @RequestMapping("/health-check")
     public String healthCheck() {
-        return String.format("USER-SERVICE running on Port %s", env.getProperty("local.server.port"));
+        return String.format("CATALOG-SERVICE running on Port %s", env.getProperty("local.server.port"));
     }
 
     @GetMapping("/catalogs")
