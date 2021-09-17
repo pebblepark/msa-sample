@@ -21,3 +21,7 @@ eureka:
   client:
     register-with-eureka: true
     fetch-registry: true
+
+logging:
+  level:
+    com.example.userservice: DEBUG
