@@ -520,3 +520,27 @@ eureka:
 
 - `Eureka Dashboard` 를 통해 유레카에 등록된 인스턴스를 확인할 수 있다.
 - 동일한 서비스의 인스턴스가 여러 개일 경우, `apigateway`를 통해 같은 url에 접근해도 서로 다른 포트로 요청이 분산됨을 확인할 수 있다.
+
+---
+
+## Spring Cloud Config
+
+### user-service
+
+#### Dependencies 추가
+
+- spring-cloud-starter-config
+- spring-cloud-starter-bootstrap
+
+#### bootstrap.yml 추가
+
+- bootstrap.yml 파일은 application.yml 파일보다 우선순위가 높다.
+
+### config server 값 변경하는 방법
+
+- 서버 재기동
+- Actuator refresh
+  - Spring Boot Actuator
+    - Application 상태, 모니터링
+    - Metric 수집을 위한 Http End Point 제공
+- Spring cloud bus 사용
