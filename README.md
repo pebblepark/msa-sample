@@ -539,8 +539,12 @@ eureka:
 ### config server 값 변경하는 방법
 
 - 서버 재기동
-- Actuator refresh
+- Actuator refresh : api-server-ip:port/actuator/refresh -> config 변경된 값으로 업데이트 해줌
   - Spring Boot Actuator
     - Application 상태, 모니터링
     - Metric 수집을 위한 Http End Point 제공
 - Spring cloud bus 사용
+
+<br />
+##### 실행순서
+- eureka -> cofing-service -> apigateway -> user-service
