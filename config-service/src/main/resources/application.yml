@@ -8,5 +8,6 @@ spring:
     config:
       server:
         git:
-          uri: file://C:/study/msa/msa-sample/git-local-repo
+#          uri: file://C:/study/msa/msa-sample/git-local-repo
+          uri: https://github.com/pebblepark/spring-cloud-config.git
           default-label: main

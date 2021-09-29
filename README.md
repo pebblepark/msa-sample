@@ -554,3 +554,9 @@ eureka:
 <br />
 ##### 실행순서
 - eureka -> cofing-service -> apigateway -> user-service
+
+### Remote Git Repository 연결
+
+- Remote: [gitHub](https://github.com/pebblepark/spring-cloud-config)
+- config-service의 uri 변경
+  - private 이면 `username`, `password` 설정 추가해주기
