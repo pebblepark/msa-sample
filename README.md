@@ -525,6 +525,12 @@ eureka:
 
 ## Spring Cloud Config
 
+#### Multiple environments
+
+1. `application.yml`
+2. `application-name.yml` (ecommerce.yml)
+3. `application-name-<profile>.yml` (ecommerce-dev.yml)
+
 ### user-service
 
 #### Dependencies 추가
