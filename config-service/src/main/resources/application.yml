@@ -4,9 +4,13 @@ server:
 spring:
   application:
     name: config-service
+  profiles:
+    active: native
   cloud:
     config:
       server:
+        native:
+          search-locations: file:///C:/study/msa/msa-sample/native-file-repo
         git:
 #          uri: file://C:/study/msa/msa-sample/git-local-repo
           uri: https://github.com/pebblepark/spring-cloud-config.git
