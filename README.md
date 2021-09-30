@@ -550,9 +550,13 @@ eureka:
     - Application 상태, 모니터링
     - Metric 수집을 위한 Http End Point 제공
 - Spring cloud bus 사용
+  - 분산 시스템의 노드(Micro service)를 경량 메시지 브로커(RabbitMQ)와 연결
+  - 상태 및 구성에 대한 변경 사항을 연결된 노드에게 전달(Broadcast)
 
 <br />
+
 ##### 실행순서
+
 - eureka -> cofing-service -> apigateway -> user-service
 
 ### Remote Git Repository 연결
